@@ -29,11 +29,14 @@ const RenderChatItem = ({ chatItem, username }: Props) => {
       useNativeDriver: true,
     }).start();
   });
+
   return (
     <Animated.View
       style={[
         Styles.flatListItem,
-        { borderColor: username == chatItem.by ? "green" : "blue" },
+        { backgroundColor: "#F8F8F8"},
+        { borderColor: "#F8F8F8" },
+        { paddingStart: 20},
         { opacity: animatedValue },
         { transform: [{ scale: animatedValue }] },
       ]}

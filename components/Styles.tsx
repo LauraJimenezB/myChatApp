@@ -7,6 +7,17 @@ const Styles = StyleSheet.create({
         backgroundColor: '#fff',
         justifyContent: "space-around"
       },
+
+      chatContainer: {
+        flex: 1,
+      },
+      image: {
+        flex: 1,
+        resizeMode: 'cover',
+        alignSelf: 'stretch',
+
+        justifyContent: 'center'
+      },
     
       //personal info
     
@@ -57,7 +68,7 @@ const Styles = StyleSheet.create({
       chatTextInput: {
         marginRight: 5,
         borderColor: "rgba(52, 52, 52, 0.8)",
-        borderWidth: 1,
+        borderWidth: 2,
         borderRadius: 4,
         flexGrow: 1,
         fontSize: 18,
