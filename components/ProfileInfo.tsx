@@ -29,7 +29,7 @@ const ProfileInfo = ({ onClosed }: ProfileInfoProps) => {
       </View>
 
       <ImageInput onChangeImage={(image) => setImage(image)} />
-      <Button title="Let's start!" onPress={() => {}} />
+      <Button title="Let's start!" onPress={() => onClosed(name, image)}/>
     </View>
   );
 };
